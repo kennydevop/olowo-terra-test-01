@@ -1,8 +1,8 @@
 resource "aws_instance" "web" {
-  ami                    = "ami-0277155c3f0ab2930"
-  instance_type          = "t2.micro"
-  key_name               = "devops"
-  user_data = <<-EOF
+  ami           = "ami-0277155c3f0ab2930"
+  instance_type = "t2.micro"
+  key_name      = "devops"
+  user_data     = <<-EOF
               #!/bin/bash
               sudo yum update -y
               sudo yum install -y httpd 
